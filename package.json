@@ -1,0 +1,40 @@
+{
+  "name": "snabbdom-decontextify",
+  "version": "0.0.0",
+  "description": "Get a decontextified (sans data etc.) VNode from a snabbdom VNode",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "tslint --type-check -p tsconfig.json",
+    "test": "npm run lint && tsc && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yarom82/snabbdom-decontextify.git"
+  },
+  "keywords": [
+    "snabbdom",
+    "vnode",
+    "context",
+    "sanitize"
+  ],
+  "author": "Yarom Shoval <yarom.adi@gmail.com> (yarom82)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yarom82/snabbdom-decontextify/issues"
+  },
+  "homepage": "https://github.com/yarom82/snabbdom-decontextify#readme",
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "snabbdom": "^0.6.7",
+    "tslint": "^5.2.0",
+    "tslint-config-standard": "^5.0.2",
+    "typescript": "^2.3.2"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/index.d.ts"
+  ],
+  "dependencies": {
+    "snabbdom-selector": "^1.2.0"
+  }
+}
