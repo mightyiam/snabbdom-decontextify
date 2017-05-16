@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Get a decontextified (sans data etc.) VNode from a snabbdom VNode",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "lint": "tslint --type-check -p tsconfig.json",
     "test": "npm run lint && tsc && ava"
