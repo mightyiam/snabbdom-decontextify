@@ -1,5 +1,5 @@
 import { selectorParser } from 'snabbdom-selector'
-import { Key, VNode } from 'snabbdom/vnode'
+import { VNode } from 'snabbdom/vnode'
 
 const decontextify = (vnode: VNode): VNode => {
   return {
