@@ -1,5 +1,5 @@
 import { test } from 'ava'
-import { Key, VNode } from 'snabbdom/vnode'
+import { VNode } from 'snabbdom/vnode'
 import decontextify from '.'
 
 test((t) => {
