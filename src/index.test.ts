@@ -25,14 +25,14 @@ test((t) => {
     children: [
       {
         children: undefined,
-        data: {},
+        data: Object.create(null),
         elm: undefined,
         key: '',
         sel: 'div',
         text: 'foo'
       }
     ] as VNode[],
-    data: {},
+    data: Object.create(null),
     elm: undefined,
     key: '',
     sel: 'div',
