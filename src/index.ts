@@ -4,7 +4,7 @@ import { VNode } from 'snabbdom/vnode'
 const decontextify = (vnode: VNode): VNode => {
   return {
     children: vnode.children ? vnode.children.map(decontextify) : undefined,
-    data: {},
+    data: Object.create(null),
     elm: undefined,
     key: '',
     sel: vnode.sel ? selectorParser(vnode).tagName : undefined,
