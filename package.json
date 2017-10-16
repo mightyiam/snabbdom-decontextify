@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "lint": "tslint --type-check -p tsconfig.json",
+    "lint": "eslint --ext .ts src/**/*",
     "test": "npm run lint && tsc && ava"
   },
   "repository": {
@@ -26,10 +26,15 @@
   "homepage": "https://github.com/yarom82/snabbdom-decontextify#readme",
   "devDependencies": {
     "ava": "^0.22.0",
+    "eslint": "^4.9.0",
+    "eslint-config-standard-with-typescript": "^1.0.4",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
     "snabbdom": "^0.7.0",
-    "tslint": "^5.2.0",
-    "tslint-config-standard": "^6.0.0",
-    "typescript": "^2.3.2"
+    "typescript": "^2.3.2",
+    "typescript-eslint-parser": "^8.0.0"
   },
   "files": [
     "lib/index.js",
