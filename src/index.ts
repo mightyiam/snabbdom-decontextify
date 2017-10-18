@@ -6,7 +6,7 @@ const decontextify = (vnode: VNode): VNode => {
     children: vnode.children ? vnode.children.map(decontextify) : undefined,
     data: Object.create(null),
     elm: undefined,
-    key: '',
+    key: vnode.key,
     sel: vnode.sel ? selectorParser(vnode).tagName : undefined,
     text: vnode.text
   }
