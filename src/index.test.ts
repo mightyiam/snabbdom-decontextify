@@ -3,7 +3,7 @@ import { VNode } from 'snabbdom/vnode'
 import decontextify from '.'
 
 test((t) => {
-  const vnode: VNode = {
+  const input: VNode = {
     children: [
       {
         children: undefined,
@@ -12,8 +12,9 @@ test((t) => {
         key: 1234,
         sel: 'div#child-div.child-class',
         text: 'foo'
-      }
-    ] as VNode[],
+      },
+      'string child'
+    ],
     data: {},
     elm: {} as Node,
     key: 'bar',
@@ -21,7 +22,7 @@ test((t) => {
     text: 'kung'
   }
 
-  const expectedVNode: VNode = {
+  const expected: VNode = {
     children: [
       {
         children: undefined,
@@ -30,8 +31,9 @@ test((t) => {
         key: 1234,
         sel: 'div',
         text: 'foo'
-      }
-    ] as VNode[],
+      },
+      'string child'
+    ],
     data: Object.create(null),
     elm: undefined,
     key: 'bar',
@@ -39,7 +41,7 @@ test((t) => {
     text: 'kung'
   }
 
-  const actualVNode: VNode = decontextify(vnode)
+  const actual: VNode = decontextify(input)
 
-  t.deepEqual(actualVNode, expectedVNode)
+  t.deepEqual(actual, expected)
 })
