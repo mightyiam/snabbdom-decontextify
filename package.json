@@ -1,6 +1,6 @@
 {
   "name": "snabbdom-decontextify",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Get a decontextified (sans data etc.) VNode from a snabbdom VNode",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
