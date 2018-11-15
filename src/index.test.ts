@@ -2,7 +2,7 @@ import { test } from 'ava'
 import { VNode } from 'snabbdom/vnode'
 import decontextify from '.'
 
-test((t) => {
+test((t): void => {
   const input: VNode = {
     children: [
       {
