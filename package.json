@@ -37,7 +37,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-typescript": "^0.13.0",
     "npm-run-all": "^4.1.1",
-    "snabbdom": "^0.7.0",
+    "snabbdom": "^0.7.2",
     "typescript": "3.1.6",
     "typescript-eslint-parser": "^21.0.1"
   },
@@ -46,6 +46,6 @@
     "lib/index.d.ts"
   ],
   "dependencies": {
-    "snabbdom-selector": "^4.0.0"
+    "snabbdom-selector": "^4.1.0"
   }
 }
