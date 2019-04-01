@@ -8,7 +8,7 @@ test('a single test', (t): void => {
       {
         children: undefined,
         data: {},
-        elm: {} as Node,
+        elm: {} as any,
         key: 1234,
         sel: 'div#child-div.child-class',
         text: 'foo'
@@ -16,7 +16,7 @@ test('a single test', (t): void => {
       'string child'
     ],
     data: {},
-    elm: {} as Node,
+    elm: {} as any,
     key: 'bar',
     sel: 'div#text-div.text-class',
     text: 'kung'
