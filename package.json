@@ -1,10 +1,11 @@
 {
   "name": "snabbdom-decontextify",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "Get a decontextified (sans data etc.) VNode from a snabbdom VNode",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
+    "release": "standard-version",
     "lint": "eslint --ext .js,.ts .",
     "transpile": "tsc",
     "unit": "ava",
@@ -57,6 +58,7 @@
     "husky": "^3.0.8",
     "npm-run-all": "^4.1.5",
     "snabbdom": "^0.7.3",
+    "standard-version": "^7.0.0",
     "tsconfigs": "^4.0.1",
     "typescript": "3.4.1"
   },
