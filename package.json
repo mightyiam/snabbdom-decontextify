@@ -60,7 +60,7 @@
     "snabbdom": "0.7.3",
     "standard-version": "7.0.0",
     "tsconfigs": "4.0.1",
-    "typescript": "3.4.1"
+    "typescript": "3.7.2"
   },
   "files": [
     "lib/index.d.ts",
